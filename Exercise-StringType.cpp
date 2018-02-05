@@ -12,11 +12,12 @@ int main()
  
 	string myName="Afzal";//write your name there.
 	//make a while loop until user input 'quit' to exit/end the program
-
+    string userName;
 	while(true)
 	{
 		cout<<"Enter your name or quit to exit: ";
-		string userName;
+		cin>>userName;
+		
 		//get the user input for string.
 		if(userName=="Abu")
 	       	{
@@ -27,7 +28,10 @@ int main()
 			cout << endl;	
 		    break;
 	    }
-		
+		else if(userName != myName)
+		{
+		cout<<"hello "<<userName<<endl;
+		}
 		
 		else
 		{
